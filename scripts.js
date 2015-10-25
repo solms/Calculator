@@ -12,7 +12,7 @@ $(document).ready(function() {
       clicked = $(this).attr('id');
     else
       clicked = $(this).text();
-    
+
     // If a number is pressed
     if (clicked % 1 == 0) {
       current_term += clicked;
@@ -28,14 +28,13 @@ $(document).ready(function() {
       // Execute the equation
       var answer = 0;
       var operator = " ";
-      
+
       // First look for * or / in order to execute the calculation
       // in the correct order
       var multiply_position = equation.indexOf('*');
       var divide_position = equation.indexOf('/');
       // Check if both exist in equation
-      if (multiply_position != -1 && divide_position != -1){
-        console.log("Both present!");
+      if (multiply_position != -1 || divide_position != -1){
         console.log(equation);
         while(multiply_position != -1 || divide_position != -1){
           console.log("Equation: " + equation + "\t , Indexes: " + multiply_position + "," + divide_position);
@@ -53,7 +52,7 @@ $(document).ready(function() {
           divide_position = equation.indexOf('/');
         }
       }
-      else if (multiply_position == -1){
+      /*else if (multiply_position == -1){
         // Only division is present
         equation = divide(equation, divide_position);
         // Now check if division takes place more than once
@@ -72,8 +71,8 @@ $(document).ready(function() {
           equation = multiply(equation, multiply_position);
           multiply_position = equation.indexOf('*');
         }
-      }
-      
+      }*/
+
       // Do the remaining summation and subtraction
       for (var i = 0; i < equation.length; i++) {
         // First number
