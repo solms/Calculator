@@ -1,6 +1,17 @@
+body {
+  background-color: #3DFAFF;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  text-shadow: 4px 4px 4px;
+  text-align: center;
+  color: #003B36;
+}
+
 #outer-div {
   width: 220px;
-  background-color: grey;
+  background-color: #003B36;
   margin: 0 auto;
   border-radius: 3px;
 }
@@ -16,10 +27,11 @@
   text-align: right;
   border-width: 3px;
   border-style: solid;
-  border-color: orange;
+  border-color: #003B36;
   border-radius: 6px;
   font-size: 26px;
   margin-top: 5px;
+  color: #003B36;
 }
 
 .row {
@@ -30,11 +42,12 @@
 .button {
   border-style: solid;
   border-radius: 100%;
-  border-color: orange;
+  border-color: #003B36;
   background-color: white;
   width: 40px;
   height: 40px;
   vertical-align: middle;
   line-height: 30px;
   font-weight: bold;
+  color: #003B36;
 }

@@ -52,26 +52,6 @@ $(document).ready(function() {
           divide_position = equation.indexOf('/');
         }
       }
-      /*else if (multiply_position == -1){
-        // Only division is present
-        equation = divide(equation, divide_position);
-        // Now check if division takes place more than once
-        divide_position = equation.indexOf('/');
-        while(divide_position != -1){
-          equation = divide(equation, divide_position);
-          divide_position = equation.indexOf('/');
-        }
-      }
-      else if (divide_position == -1){
-        // Only multiplication is present
-        equation = multiply(equation, multiply_position);
-        // Now check if multiplication takes place more than once
-        multiply_position = equation.indexOf('*');
-        while(multiply_position != -1){
-          equation = multiply(equation, multiply_position);
-          multiply_position = equation.indexOf('*');
-        }
-      }*/
 
       // Do the remaining summation and subtraction
       for (var i = 0; i < equation.length; i++) {
@@ -114,7 +94,7 @@ $(document).ready(function() {
     }
     // '%' is clicked
     else if (clicked == '%' && current_term != ' ') {
-
+      // TODO
     }
     // A normal operator is clicked
     else if(current_term != ' '){
